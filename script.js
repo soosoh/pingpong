@@ -1,27 +1,52 @@
 let n1 = 0;
 let n2 = 0;
 
+function win1() {
+    s1.innerHTML="Win";
+    s1.removeEventListener("click", adds1);
+    s2.removeEventListener("click", adds2);
+}
+
+function win2() {
+    s2.innerHTML="Win";
+    s1.removeEventListener("click", adds1);
+    s2.removeEventListener("click", adds2);
+}
+
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+const win = getQueryParam("win");
+
 function adds1() {
     n1++;
-    s1.innerHTML=n1;
+    s1.innerHTML = n1;
+    if (n1 == win) {
+        setTimeout(win1(),500);
+    }
 }
 
 function adds2() {
     n2++;
-    s2.innerHTML=n2;
+    s2.innerHTML = n2;
+    if (n2 == win) {
+        setTimeout(win2(),500);
+    }
 }
 
 function mins1() {
-    if(n1>0){
+    if (n1 > 0) {
         n1--;
-        s1.innerHTML=n1;
+        s1.innerHTML = n1;
     }
 }
 
 function mins2() {
-    if(n2>0){
+    if (n2 > 0) {
         n2--;
-        s2.innerHTML=n2;
+        s2.innerHTML = n2;
     }
 }
 

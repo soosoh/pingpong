@@ -1,0 +1,55 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#containinp {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+
+input[type=number] {
+    margin: 2%;
+    text-align: center;
+    -moz-appearance: textfield;
+    font-family: 'Pretendard-Regular';
+    font-size: 4vh;
+    width: 36vh;
+    height: 12vh;
+    border-radius: 200px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+  align-items: center;
+  background-color: #5192d7;
+  color: #ffffff;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 6vh;
+  border-radius: 200px;
+  width: 36vh;
+  height: 12vh;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}

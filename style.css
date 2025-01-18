@@ -11,65 +11,6 @@ h1 {
     font-size: 60px;
 }
 
-#scores {
-    display: flex;
-    flex-direction: row;
-    height: 30vh;
-    justify-content: center;
-    user-select: none;
-}
-
-#minus {
-    margin-top: 3%;
-    display: flex;
-    flex-direction: row;
-    height: 20vh;
-    justify-content: center;
-    user-select: none;
-}
-
-.b0 {
-    color: #f3e8e8;
-    width: 48%;
-    margin: 0 1% 0 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18vw;
-    font-family: "Pretendard-Regular", sans-serif;
-    border-radius: 5vw;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-.mico {
-    background-color: #f3e8e8;
-    width: 5vw;
-    height: 2.4vh;
-    margin: 0 1% 0 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-#minus1 {
-    background-color: #cf6060;
-}
-
-#minus2 {
-    background-color: #395ee3;
-}
-
-#score1 {
-    background-color: #cf6060;
-}
-
-#score2 {
-    background-color: #395ee3;
-}
-
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
