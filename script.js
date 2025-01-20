@@ -2,13 +2,13 @@ let n1 = 0;
 let n2 = 0;
 
 function win1() {
-    s1.innerHTML="Win";
+    s1.innerHTML = "Win";
     s1.removeEventListener("click", adds1);
     s2.removeEventListener("click", adds2);
 }
 
 function win2() {
-    s2.innerHTML="Win";
+    s2.innerHTML = "Win";
     s1.removeEventListener("click", adds1);
     s2.removeEventListener("click", adds2);
 }
@@ -18,21 +18,27 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-const win = getQueryParam("win");
+win = parseInt(getQueryParam("win"));
+duce = getQueryParam("duce") === 'true';
 
 function adds1() {
     n1++;
     s1.innerHTML = n1;
     if (n1 == win) {
-        setTimeout(win1(),1000);
+        setTimeout(win1, 1000);
+    } else if (n1 == win - 1 && n2 == win - 1 && duce) {
+        win++;
     }
+    console.log(win);
 }
 
 function adds2() {
     n2++;
     s2.innerHTML = n2;
     if (n2 == win) {
-        setTimeout(win2(),1000);
+        setTimeout(win2, 1000);
+    } else if (n1 == win - 1 && n2 == win - 1 && duce) {
+        win++;
     }
 }
 

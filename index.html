@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
@@ -7,14 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="firstc.css">
 </head>
+
 <body>
-    <div id="containinp">
-        <input type="number" id="target" placeholder="Target score">
+    <h1>Digital Scoreboard</h1>
+
+    <div id="targetScore">
+        <div class="t1">Target score</div>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+                <span class="handle"></span>
+            </label>
+        </div>
+        <div id="containinp">
+            <input type="number" id="target" placeholder="Target score">
+        </div>
     </div>
-    <div class="button-container">
-        <button id="start">Start</button>
+
+    <div id="duce">
+        <div class="t1">Duce</div>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="duceSwitch">
+                <span class="slider"></span>
+                <span class="handle"></span>
+            </label>
     </div>
-    
+
+    <button id="start">Start</button>
+
     <script src="first.js"></script>
 </body>
+
 </html>

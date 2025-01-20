@@ -7,7 +7,7 @@
 }
 
 #minus {
-    margin-top: 2%;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     height: 20vh;
@@ -18,13 +18,13 @@
 .b0 {
     color: #f3e8e8;
     width: 48%;
-    margin: 0 1% 0 1%;
+    margin: 0 4px 0 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: min(16vw, 160px);
     font-family: "Pretendard-Regular", sans-serif;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 200;
     cursor: pointer;
 }

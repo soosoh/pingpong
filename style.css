@@ -7,8 +7,17 @@ h1 {
     font-family: "Pretendard-Regular", sans-serif;
     font-weight: 100;
     text-align: center;
-    margin: 4%;
+    margin: 2%;
     font-size: 60px;
+}
+
+.t1 {
+    display: inline;
+    color: #f3e8e8;
+    font-family: "Pretendard-Regular", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0;
 }
 
 @font-face {
