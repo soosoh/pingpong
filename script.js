@@ -24,7 +24,7 @@ function adds1() {
     n1++;
     s1.innerHTML = n1;
     if (n1 == win) {
-        setTimeout(win1(),500);
+        setTimeout(win1(),1000);
     }
 }
 
@@ -32,7 +32,7 @@ function adds2() {
     n2++;
     s2.innerHTML = n2;
     if (n2 == win) {
-        setTimeout(win2(),500);
+        setTimeout(win2(),1000);
     }
 }
 
