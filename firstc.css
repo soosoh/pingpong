@@ -124,3 +124,16 @@ input:checked~.slider {
 input:checked~.handle {
   transform: translateX(20px);
 }
+
+/*mobile*/
+@media screen and (max-width: 1000px) {
+  input[type="number"], button {
+    width: 90%;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  button:hover {
+    width: 90%;
+  }
+}

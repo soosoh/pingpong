@@ -9,6 +9,9 @@ h1 {
     text-align: center;
     margin: 2%;
     font-size: 60px;
+    @media screen and (max-width: 1000px) {
+        font-size: 40px;
+    }
 }
 
 .t1 {
