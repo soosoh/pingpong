@@ -10,33 +10,24 @@
 </head>
 
 <body>
-    <h1>Digital Scoreboard</h1>
+    <h1>탁구 점수판</h1>
+    <input type="number" id="target" placeholder="승점">
+    <button id="start">시작</button>
 
-    <div id="targetScore">
-        <div class="t1">Target score</div>
-        <div class="switch-container">
-            <label class="switch">
-                <input type="checkbox" id="toggleSwitch">
-                <span class="slider"></span>
-                <span class="handle"></span>
-            </label>
-        </div>
-        <div id="containinp">
-            <input type="number" id="target" placeholder="Target score">
+    <div id="controls">
+        <!--<h1 style="text-align: left;margin-left: 0;">설정</h1>-->
+
+        <div id="duce">
+            <div class="t1">듀스</div>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="duceSwitch">
+                    <span class="slider"></span>
+                    <span class="handle"></span>
+                </label>
+            </div>
         </div>
     </div>
-
-    <div id="duce">
-        <div class="t1">Duce</div>
-        <div class="switch-container">
-            <label class="switch">
-                <input type="checkbox" id="duceSwitch">
-                <span class="slider"></span>
-                <span class="handle"></span>
-            </label>
-    </div>
-
-    <button id="start">Start</button>
 
     <script src="first.js"></script>
 </body>

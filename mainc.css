@@ -1,4 +1,23 @@
+body {
+    margin-top: 5%;
+}
+
+.none {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#serve {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: center;
+    user-select: none;
+}
+
 #scores {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     height: 30vh;
@@ -19,20 +38,56 @@
     color: #f3e8e8;
     width: 48%;
     margin: 0 4px 0 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    /* Use relative positioning */
     font-size: min(16vw, 160px);
     font-family: "Pretendard-Regular", sans-serif;
-    border-radius: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    /* Center text horizontally */
+    line-height: 30vh;
+}
+
+.sb {
+    width: 48%;
+    margin: 0 4px 0 4px;
+    position: relative;
+    /* Use relative positioning */
+    font-size: min(5vw, 50px);
+    font-family: "Pretendard-Regular", sans-serif;
+    border-radius: 6px;
     font-weight: 200;
     cursor: pointer;
+    text-align: center;
+    /* Center text horizontally */
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 30vh;
+}
+
+.sb>div {
+    position: absolute;
+    /* Use absolute positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center text vertically and horizontally */
+}
+
+.b0>div {
+    position: absolute;
+    /* Use absolute positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center text vertically and horizontally */
 }
 
 .mico {
     background-color: #f3e8e8;
-    width: 5vw;
-    height: 1vw;
+    width: 5.5vw;
+    height: 1.5vw;
     margin: 0 1% 0 1%;
     display: flex;
     align-items: center;
@@ -42,17 +97,25 @@
 }
 
 #minus1 {
-    background-color: #cf6060;
+    background-color: #ff4d4d;
 }
 
 #minus2 {
-    background-color: #395ee3;
+    background-color: #4d8bff;
 }
 
 #score1 {
-    background-color: #cf6060;
+    background-color: #ff4d4d;
 }
 
 #score2 {
-    background-color: #395ee3;
+    background-color: #4d8bff;
+}
+
+#serve1 {
+    color: #ff4d4d;
+}
+
+#serve2 {
+    color: #4d8bff;
 }
