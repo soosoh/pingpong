@@ -27,7 +27,7 @@ input::placeholder {
 input[type="number"] {
   background-color: #161616;
   display: block;
-  margin: 1% auto;
+  margin: 20px auto 0 auto;
   text-align: center;
   font-family: 'Pretendard-Regular';
   font-weight: 100;
@@ -47,7 +47,7 @@ input:focus {
 
 button {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   background-color: #1c7ddd;
   color: #ffffff;
   font-family: "Pretendard-Regular", sans-serif;
@@ -67,10 +67,8 @@ button:hover {
   box-shadow: 0px 2px  100px -30px #c4c4c4;
 }
 
-.none {
-  opacity: 0;
-  width: 0;
-  height: 0;
+#duce {
+  margin-top: 20px;
 }
 
 .switch-container {

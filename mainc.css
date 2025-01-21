@@ -41,6 +41,9 @@ body {
     position: relative;
     /* Use relative positioning */
     font-size: min(16vw, 160px);
+    @media(max-width: 1000px) {
+        font-size: min(8vw, 80px);
+    }
     font-family: "Pretendard-Regular", sans-serif;
     border-radius: 6px;
     font-weight: 600;
@@ -56,6 +59,9 @@ body {
     position: relative;
     /* Use relative positioning */
     font-size: min(5vw, 50px);
+    @media(max-width: 1000px) {
+        font-size: min(2vw, 20px);
+    }
     font-family: "Pretendard-Regular", sans-serif;
     border-radius: 6px;
     font-weight: 200;
