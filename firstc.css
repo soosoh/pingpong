@@ -7,6 +7,9 @@ input::-webkit-inner-spin-button {
 
 #controls {
   padding-left: 10%;
+  @media screen and (max-width: 1000px) {
+    padding-left: 5%;
+  }
 }
 
 #containinp {

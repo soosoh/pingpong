@@ -5,6 +5,8 @@ function win1() {
     s1.innerHTML = "Win";
     s1.removeEventListener("click", adds1);
     s2.removeEventListener("click", adds2);
+    m1.removeEventListener("click", mins1);
+    m2.removeEventListener("click", mins2);
 }
 
 function win2() {
