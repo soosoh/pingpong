@@ -82,13 +82,13 @@
 
 #serve1 {
     @media(max-height: 500px) {
-        background-color: #ff4d4d;
+        background-color: #e47171;
     }
 }
 
 #serve2 {
     @media(max-height: 500px) {
-        background-color: #4d8bff;
+        background-color: #2461d4;
     }
 }
 
