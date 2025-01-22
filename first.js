@@ -8,5 +8,5 @@ isduce = document.querySelector("#duceSwitch");
 start.addEventListener("click", function () {
     const duce = isduce.checked;
     const queryString = `win=${win}&duce=${duce}`;
-    window.location.href = "scores.html?" + queryString;
+    window.location.href = "scores?" + queryString;
 });
