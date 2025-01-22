@@ -24,7 +24,7 @@ duce = url.get("duce") === 'true';
 
 function adds1() {
     n1++;
-    s1.innerHTML = n1;
+    s1.children[0].innerHTML = n1;
     if (n1 == win) {
         setTimeout(win1, 500);
     } else if (n1 == win - 1 && n2 == win - 1 && duce) {
@@ -34,7 +34,7 @@ function adds1() {
 
 function adds2() {
     n2++;
-    s2.innerHTML = n2;
+    s2.children[0].innerHTML = n2;
     if (n2 == win) {
         setTimeout(win2, 500);
     } else if (n1 == win - 1 && n2 == win - 1 && duce) {
@@ -45,14 +45,14 @@ function adds2() {
 function mins1() {
     if (n1 > 0) {
         n1--;
-        s1.innerHTML = n1;
+        s1.children[0].innerHTML = n1;
     }
 }
 
 function mins2() {
     if (n2 > 0) {
         n2--;
-        s2.innerHTML = n2;
+        s2.children[0].innerHTML = n2;
     }
 }
 
